@@ -1,12 +1,17 @@
 /* jshint -W097 *//*global module, window, require */
 'use strict';
 
+var toArray = require('to-array');
+var noScroll = require('no-scroll');
+
 /**
  * ImageZoomNew constructor description
  *
  * @class ImageZoomNew
  * @classdesc ImageZoomNew class description
+ * This is an image zoomer. Like a lightbox, but prettier <3
  *
+ * @param {String} imgStr - Query selector string for the images
  * @param {object} options - Instance instantiation object
  * @param {string} options.example - Example options property
  */
