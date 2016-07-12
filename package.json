@@ -18,7 +18,10 @@
     "test:browser": "open test/spec/index.html",
     "example": "open test/examples/index.html"
   },
-  "dependencies": {},
+  "dependencies": {
+    "no-scroll": "^1.1.2",
+    "to-array": "^0.1.4"
+  },
   "devDependencies": {
     "browserify": "^12.0.1",
     "chai": "^3.4.1",
