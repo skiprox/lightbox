@@ -1,0 +1,48 @@
+{
+  "name": "image-zoom-new",
+  "version": "1.0.0-0",
+  "description": "",
+  "author": "",
+  "main": "src/image-zoom-new/image-zoom-new.js",
+  "bin": {
+    "image-zoom-new": "bin/image-zoom-new.js"
+  },
+  "scripts": {
+    "docs": "jsdoc src/image-zoom-new/image-zoom-new.js -p -d dist/docs/",
+    "setup": "mkdir -p dist/",
+    "build": "npm run setup && npm run js",
+    "watch": "npm run build && npm run watch:js",
+    "js": "browserify src/image-zoom-new/image-zoom-new.js -o dist/image-zoom-new.js && browserify -r ./src/image-zoom-new/image-zoom-new.js:image-zoom-new > dist/image-zoom-new.debug.js",
+    "watch:js": "onchange 'src/**/*.js' -- npm run js",
+    "test": "mocha-phantomjs -R dot test/spec/index.html",
+    "test:browser": "open test/spec/index.html",
+    "example": "open test/examples/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.2.0",
+    "jsdoc": "^3.4.0",
+    "mocha": "^2.3.4",
+    "mocha-phantomjs": "^4.0.2",
+    "onchange": "^2.5.0",
+    "rsvp": "^3.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/kettle/image-zoom-new/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kettle/image-zoom-new"
+  },
+  "homepage": "https://github.com/kettle/image-zoom-new",
+  "contributors": [
+    ""
+  ],
+  "keywords": [],
+  "engines": {
+    "node": ">=0.10.3"
+  },
+  "license": "MIT"
+}
