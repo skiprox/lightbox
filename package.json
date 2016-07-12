@@ -1,18 +1,18 @@
 {
-  "name": "image-zoom-new",
+  "name": "lightbox",
   "version": "1.0.0-0",
   "description": "",
   "author": "",
-  "main": "src/image-zoom-new/image-zoom-new.js",
+  "main": "src/lightbox/lightbox.js",
   "bin": {
-    "image-zoom-new": "bin/image-zoom-new.js"
+    "lightbox": "bin/lightbox.js"
   },
   "scripts": {
-    "docs": "jsdoc src/image-zoom-new/image-zoom-new.js -p -d dist/docs/",
+    "docs": "jsdoc src/lightbox/lightbox.js -p -d dist/docs/",
     "setup": "mkdir -p dist/",
     "build": "npm run setup && npm run js",
     "watch": "npm run build && npm run watch:js",
-    "js": "browserify src/image-zoom-new/image-zoom-new.js -o dist/image-zoom-new.js && browserify -r ./src/image-zoom-new/image-zoom-new.js:image-zoom-new > dist/image-zoom-new.debug.js",
+    "js": "browserify src/lightbox/lightbox.js -o dist/lightbox.js && browserify -r ./src/lightbox/lightbox.js:lightbox > dist/lightbox.debug.js",
     "watch:js": "onchange 'src/**/*.js' -- npm run js",
     "test": "mocha-phantomjs -R dot test/spec/index.html",
     "test:browser": "open test/spec/index.html",
@@ -33,13 +33,13 @@
     "rsvp": "^3.2.1"
   },
   "bugs": {
-    "url": "https://github.com/kettle/image-zoom-new/issues"
+    "url": "https://github.com/kettle/lightbox/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kettle/image-zoom-new"
+    "url": "https://github.com/kettle/lightbox"
   },
-  "homepage": "https://github.com/kettle/image-zoom-new",
+  "homepage": "https://github.com/kettle/lightbox",
   "contributors": [
     ""
   ],
