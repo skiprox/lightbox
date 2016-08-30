@@ -55,4 +55,29 @@ h2 {
 p {
 	margin-bottom: 2em;
 }
-
+.section {
+	width: 90%;
+	max-width: 720px;
+	margin: 1em auto;
+}
+.image-zoom {
+	display: block;
+	position: relative;
+}
+.image-zoom img {
+	width: 100%;
+	display: block;
+}
+.image-zoom-left {
+	max-width: 400px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.image-zoom-right {
+	max-width: 400px;
+	float: right;
+	margin: 0 10px 10px 0;
+}
+.image-zoom img:hover {
+	cursor: -webkit-zoom-in;
+}

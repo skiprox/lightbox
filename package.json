@@ -19,6 +19,7 @@
     "example": "open test/examples/index.html"
   },
   "dependencies": {
+    "defaults": "^1.0.3",
     "no-scroll": "^1.1.2",
     "to-array": "^0.1.4"
   },
