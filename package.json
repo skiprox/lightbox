@@ -12,7 +12,7 @@
     "setup": "mkdir -p dist/",
     "build": "npm run setup && npm run js",
     "watch": "npm run build && npm run watch:js",
-    "js": "browserify src/lightbox/lightbox.js -o dist/lightbox.js && browserify -r ./src/lightbox/lightbox.js:lightbox > dist/lightbox.debug.js",
+    "js": "browserify src/lightbox/lightbox.js -o dist/lightbox.js && browserify -r ./src/lightbox/lightbox.js:lightbox > dist/lightbox.debug.js && browserify index.js -o index.built.js",
     "watch:js": "onchange 'src/**/*.js' -- npm run js",
     "test": "mocha-phantomjs -R dot test/spec/index.html",
     "test:browser": "open test/spec/index.html",
